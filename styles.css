@@ -18,7 +18,7 @@ body {
 .header {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: #fff;
-    padding: 15px 0;
+    padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -31,16 +31,10 @@ body {
     align-items: center;
 }
 
-.header .logo a {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ffc107;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.header .logo a:hover {
-    color: #ec6f6f;
+.logo img {
+    width: 120px;  
+    height: 120px;  
+    border-radius: 20%;
 }
 
 .navbar {
@@ -456,7 +450,7 @@ body {
 
 .project {
     flex: 1 1 calc(50% - 50px);
-    background: linear-gradient(to right, #c2cffc, #6a94ca);
+    background: linear-gradient(to right, #3c64f6, #6a94ca);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
