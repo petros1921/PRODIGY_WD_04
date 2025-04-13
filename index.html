@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/Logo.png" type="img/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div class="cursor"></div>
@@ -17,7 +17,7 @@
 
     <header>
         <div class="logo">
-            <a href="/"><img src="/images/Logo.png" alt="Portfolio Logo" height="40"></a>
+            <a href="#home">Petros<span>.</span></a>
         </div>
         <nav>
             <ul class="nav-links">
@@ -28,6 +28,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -54,7 +58,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="images/Photo.jpg" alt="Petros Worku" class="profile-photo">
+                        <img src="images/Photo.jpg" alt="Petros Worku">
                     </div>
                 </div>
             </div>
@@ -73,7 +77,7 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/Photo.jpg" alt="Petros Worku" class="profile-photo">
+                    <img src="assets/about.jpg" alt="About Me">
                     <div class="experience-badge">
                         <span class="number">1+</span>
                         <span class="text">Year<br>Experience</span>
@@ -160,60 +164,60 @@
                 <h3>Technologies I Work With</h3>
                 <div class="tech-icons">
                     <div class="tech-icon">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML5 & CSS3</span>
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5 & CSS3</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fab fa-js"></i>
-                    <span>JavaScript (ES6+)</span>
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript (ES6+)</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>Tailwind CSS</span>
+                        <i class="fab fa-css3-alt"></i>
+                        <span>Tailwind CSS</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fab fa-node-js"></i>
-                    <span>Express.js & Node.js</span>
+                        <i class="fab fa-node-js"></i>
+                        <span>Express.js & Node.js</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fab fa-vuejs"></i>
-                    <span>Vue.js</span>
+                        <i class="fab fa-vuejs"></i>
+                        <span>Vue.js</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fab fa-vuejs"></i>
-                    <span>Nuxt.js</span>
+                        <i class="fab fa-vuejs"></i>
+                        <span>Nuxt.js</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fas fa-project-diagram"></i>
-                    <span>GraphQL</span>
+                        <i class="fas fa-project-diagram"></i>
+                        <span>GraphQL</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fas fa-database"></i>
-                    <span>MongoDB</span>
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fas fa-database"></i>
-                    <span>MySQL</span>
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fas fa-database"></i>
-                    <span>SQLite</span>
+                        <i class="fas fa-database"></i>
+                        <span>SQLite</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fas fa-exchange-alt"></i>
-                    <span>REST APIs</span>
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>REST APIs</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                    <span>Responsive Design</span>
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Responsive Design</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fab fa-python"></i>
-                    <span>Python & Flask</span>
+                        <i class="fab fa-python"></i>
+                        <span>Python & Flask</span>
                     </div>
                     <div class="tech-icon">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git & Version Control</span>
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git & Version Control</span>
                     </div>
                 </div>
             </div>
@@ -233,7 +237,7 @@
                 <button class="filter-btn" data-filter="ui">UI/UX Design</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card" data-category="app">
+                <div class="project-card" data-category="web">
                     <div class="project-img">
                         <img src="images/stopwatch.png" alt="Project 1">
                     </div>
@@ -246,12 +250,12 @@
                             <span>JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://stop-w0tch.netlify.app/" class="project-link" target="_blank" ><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://stop-w0tch.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                             <a href="https://github.com/petros1921/PRODIGY_WD_02" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="app">
+                <div class="project-card" data-category="ui">
                     <div class="project-img">
                         <img src="images/calculator.png" alt="Project 2">
                     </div>
@@ -287,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="ui">
+                <div class="project-card" data-category="web">
                     <div class="project-img">
                         <img src="images/Landing_page.png" alt="Project 4">
                     </div>
@@ -304,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="app">
+                <div class="project-card" data-category="ui">
                     <div class="project-img">
                         <img src="images/Reaction_Timer.png" alt="Project 5">
                     </div>
@@ -322,13 +326,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="web">
+                <div class="project-card" data-category="app">
                     <div class="project-img">
                         <img src="images/Hulum_Store.png" alt="Project 6">
                     </div>
                     <div class="project-content">
                         <h3>🛍️ Hulum Store E-commerce Website</h3>
-                        <p>A weather application with location-based forecasts and interactive maps.</p>
+                        <p>Hulum is a modern and responsive e-commerce website that showcases a clean UI for browsing and buying products online. Built as part of a frontend challenge, this project simulates an online store experience with key features such as a product gallery, shopping cart, and product filtering.</p>
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -435,10 +439,10 @@
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="reply_to" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
                             <input type="text" id="subject" name="subject" placeholder="Subject" required>
@@ -448,6 +452,7 @@
                         </div>
                         <button type="submit" class="btn primary-btn">Send Message</button>
                     </form>
+                    <div id="form-status" class="form-status"></div>
                 </div>
             </div>
         </div>
@@ -469,4 +474,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
